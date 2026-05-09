@@ -40,7 +40,13 @@ body {
   padding: 0 24px;
 }
 
+.mobile-menu {
+  display: none;
+}
 
+.mobile-menu.show {
+  display: flex;
+}
 
 
 
