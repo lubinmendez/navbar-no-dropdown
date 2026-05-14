@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-m);
+  color: var(--color-primary);
+  background-color: var(--background-color-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a:visited {
+  color: var(--color-primary);
+}

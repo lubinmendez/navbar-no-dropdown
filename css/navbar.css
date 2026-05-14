@@ -1,0 +1,42 @@
+.menu-hamburguer-button svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-primary);
+}
+
+.menu-hamburguer-button {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: var(--background-color-primary);
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.mobile-menu {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1000;
+  top: 3.5rem; 
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 3.5rem);
+  background-color: var(--background-color-primary);
+  padding: 20px 36px;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
+
+
