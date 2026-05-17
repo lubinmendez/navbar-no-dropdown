@@ -59,6 +59,8 @@
 .tablet-desktop-menu {
   display: flex;
   gap: 40px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-m);
 }
 
 /* Component mediaqueries */
