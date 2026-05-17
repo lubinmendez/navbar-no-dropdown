@@ -13,9 +13,9 @@
   --color-secondary: #6a6a70;
   --color-tertiary: #898787;
 
-  --background-color-primary: #fcfcfc; /* 60% */
-  --background-color-secondary: #f5f5f7; /* 30% */
-  --background-color-tertiary: #ef7833;/* 10% */
+  --background-color-primary: #fcfcfc; /* 60% base background */
+  --background-color-secondary: #f5f5f7; /* 30% surface */
+  --background-color-tertiary: #ef7833; /* 10% accent */
   --background-color-hover: #E66C27;
   --background-color-new-function: #AF94FF;
   --background-color-error:  rgb(241, 38, 38);

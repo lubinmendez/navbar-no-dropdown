@@ -1,13 +1,16 @@
+/* Reset default browser styles: */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Base for rem scaling: */
 html {
     font-size: 100%;
 }
 
+/* Base typography for entire component: */
 body {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-regular);
@@ -21,6 +24,7 @@ a {
   color: var(--color-primary);
 }
 
+/* keeps visited links visually consistent with design system: */
 a:visited {
   color: var(--color-primary);
 }
