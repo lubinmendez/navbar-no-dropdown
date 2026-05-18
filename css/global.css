@@ -5,13 +5,14 @@
   padding: 0;
 }
 
-/* Base for rem scaling: */
 html {
-    font-size: 100%;
+  font-size: 100%; /* Base for rem scaling: */
+  scroll-padding-top: var(--navbar-height); /* Ensures in-page anchor links scroll to the correct position without being hidden behind the fixed navbar */
 }
 
 /* Base typography for entire component: */
 body {
+  padding-top: var(--navbar-height); /* Prevents content from being hidden behind the fixed navbar */
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-m);
