@@ -75,6 +75,7 @@
 .menu-hamburguer-button,
 .mobile-menu a {
   user-select: none;
+  -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
 }
 
 /* tablet-desktop: */
