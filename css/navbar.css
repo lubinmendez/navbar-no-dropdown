@@ -85,8 +85,11 @@
   transition: border-color 0.2s ease;
 }
 
-.tablet-desktop-menu a:hover {
-  border-bottom: 3px solid var(--background-color-tertiary);
+/* Restrict hover to devices with hover capability and fine pointer */
+@media (hover: hover) and (pointer: fine) {
+  .tablet-desktop-menu a:hover {
+    border-bottom: 3px solid var(--background-color-tertiary);
+  }
 }
 
 /* Component mediaqueries */
