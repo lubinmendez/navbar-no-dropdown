@@ -33,19 +33,18 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-l);
   background-color: var(--background-color-secondary);
-  background-color: var(--color-secondary);
-
 
   /* layout & positioning*/
   display: flex;
   flex-direction: column;
+  gap: 35px;
   position: fixed;
   top: 3.5rem; 
   left: 0;
   z-index: 1000;
 
   /* size */
-  padding: 40px 0 0 60px;
+  padding: 55px 0 0 60px;
   width: 100vw;
   height: calc(100vh - 3.5rem);
   
@@ -59,15 +58,7 @@
 }
 
 .mobile-menu a {
-  display: inline-block; /* Makes border match text width instead of full row width */
-  padding: 5px 0;
-  margin: 10px 0;
-  border-bottom: 3px solid transparent; /* Keeps layout stable when hover border appears */
-  transition: border-color 0.2s ease;
-}
-
-.mobile-menu a:hover {
-  border-bottom: 3px solid var(--background-color-tertiary);
+  padding: 5px;
 }
 
 .logo-name-link,
