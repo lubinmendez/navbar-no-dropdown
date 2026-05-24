@@ -46,7 +46,7 @@
   /* size */
   padding: 55px 0 0 60px;
   width: 100vw;
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100dvh - var(--navbar-height)); /* Uses dvh instead of vh to prevent mobile browser bars from affecting viewport height */
   
   /* animation state (hidden by default) */
   transform: translateX(100%);
