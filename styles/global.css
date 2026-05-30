@@ -33,3 +33,14 @@ a:visited {
 ul {
   list-style: none;
 }
+
+/* Customized visual selection box for Tab navigation for all focusable interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-tertiary);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
