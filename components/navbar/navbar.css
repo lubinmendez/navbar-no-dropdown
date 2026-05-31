@@ -1,9 +1,9 @@
 html {
-  scroll-padding-top: var(--bar-height); /* When clicking in-page links, offset scroll so content is not hidden behind the fixed navbar */
+  scroll-padding-top: var(--navbar-height); /* When clicking in-page links, offset scroll so content is not hidden behind the fixed navbar */
 }
 
 body {
-  padding-top: var(--bar-height); /* Prevents content from being hidden behind the fixed navbar */
+  padding-top: var(--navbar-height); /* Prevents content from being hidden behind the fixed navbar */
 }
 
 .menu-hamburger-button svg {
@@ -21,7 +21,7 @@ body {
 .navbar {
   background-color: var(--color-primary);
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
-  height: var(--bar-height);
+  height: var(--navbar-height);
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
@@ -46,14 +46,14 @@ body {
   flex-direction: column;
   gap: 35px;
   position: fixed;
-  top: var(--bar-height); 
+  top: var(--navbar-height); 
   left: 0;
   z-index: 1000;
 
   /* size */
   padding: 55px 0 0 60px;
   width: 100%; /* Use 100% instead of 100vw to avoid potential horizontal overflow caused by the scrollbar */
-  height: calc(100vh - var(--bar-height));
+  height: calc(100vh - var(--navbar-height));
   
   /* animation state (hidden by default) */
   transform: translateX(100%);

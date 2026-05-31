@@ -29,10 +29,14 @@
   --color-success: #22a06b;
 
   /* Layout */
-  --bar-height: 3.5rem;
-  /* For the navbar, this variable is used for both navbar height and body padding to prevent content from being hidden behind the fixed navbar.
-  It is also used with scroll-padding-top to prevent anchor links from scrolling behind the fixed navbar.
-  It can also be used for other components such as footers or similar layout elements. */
   --clickable-area-padding: 6px; /* Extra padding to improve click and tap targets */
-}
 
+  /* =========================
+   Navbar component variables
+  ========================= */
+
+  --navbar-height: 3.5rem;
+  /* This variable is used by the navbar component, but it is part of the global layout because it is also required by html and body for scroll and spacing behavior.
+  For the navbar, this variable is used for both navbar height and body padding to prevent content from being hidden behind the fixed navbar.
+  It is also used with scroll-padding-top to prevent anchor links from scrolling behind the fixed navbar */
+}
