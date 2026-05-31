@@ -52,7 +52,7 @@ body {
 
   /* size */
   padding: 55px 0 0 60px;
-  width: 100vw;
+  width: 100%; /* Use 100% instead of 100vw to avoid potential horizontal overflow caused by the scrollbar */
   height: calc(100vh - var(--bar-height));
   
   /* animation state (hidden by default) */
