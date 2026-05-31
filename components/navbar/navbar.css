@@ -15,7 +15,6 @@ body {
 .menu-hamburguer-button {
   background: none;
   border: none;
-  padding: 5px;
   cursor: pointer;
 }
 
@@ -65,16 +64,15 @@ body {
   transform: translateX(0%); /* Moves menu from off-screen to visible position */
 }
 
-.mobile-menu a {
-  padding: 5px;
-}
-
 .logo-name-link,
 .tablet-desktop-menu a,
 .menu-hamburguer-button,
 .mobile-menu a {
   user-select: none;
   -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
+
+  /* Increase clickable area */
+  padding: var(--clickable-area-padding);
 }
 
 /* tablet-desktop: */
@@ -88,7 +86,6 @@ body {
 
 .tablet-desktop-menu a {
   display: inline-block; /* Makes border match text width instead of full row width */
-  padding: 5px 0;
   border-bottom: 3px solid transparent;
   transition: border-color 0.2s ease;
 }
