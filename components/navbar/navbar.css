@@ -1,3 +1,11 @@
+html {
+  scroll-padding-top: var(--bar-height); /* When clicking in-page links, offset scroll so content is not hidden behind the fixed navbar */
+}
+
+body {
+  padding-top: var(--bar-height); /* Prevents content from being hidden behind the fixed navbar */
+}
+
 .menu-hamburguer-button svg {
   width: 24px;
   height: 24px;
