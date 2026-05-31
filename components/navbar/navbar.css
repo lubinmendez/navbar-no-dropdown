@@ -6,13 +6,13 @@ body {
   padding-top: var(--bar-height); /* Prevents content from being hidden behind the fixed navbar */
 }
 
-.menu-hamburguer-button svg {
+.menu-hamburger-button svg {
   width: 24px;
   height: 24px;
   fill: var(--color-neutral-900);
 }
 
-.menu-hamburguer-button {
+.menu-hamburger-button {
   background: none;
   border: none;
   cursor: pointer;
@@ -30,7 +30,7 @@ body {
   /* fixed navbar: */
   position: fixed; /* Keeps navbar fixed to viewport even when scrolling */
   top: 0; /* Required to define vertical position when using fixed positioning */
-  left: 0; /* Required to define vertical horizontal when using fixed positioning */
+  left: 0; /* Required to define horizontal position when using fixed positioning */
   width: 100%; /* Ensures it still spans full width since fixed removes normal block behavior */
 }
 
@@ -66,7 +66,7 @@ body {
 
 .logo-name-link,
 .tablet-desktop-menu a,
-.menu-hamburguer-button,
+.menu-hamburger-button,
 .mobile-menu a {
   user-select: none;
   -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
@@ -93,7 +93,7 @@ body {
 /* Restrict hover to devices with hover capability and fine pointer */
 @media (hover: hover) and (pointer: fine) {
   .tablet-desktop-menu a:hover {
-    border-bottom: 3px solid var(--color-tertiary);
+    border-bottom-color: var(--color-tertiary);
   }
 }
 
@@ -108,7 +108,7 @@ body {
 
 /* 768... */
 @media (min-width: 768px) {
-  .menu-hamburguer-button,
+  .menu-hamburger-button,
   .mobile-menu {
     display: none; 
     /* Hide hamburger button and mobile menu on desktop screens. In the case of the mobile menu, this prevents it from remaining visible after resizing from mobile to desktop. */

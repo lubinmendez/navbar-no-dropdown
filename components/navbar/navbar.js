@@ -1,10 +1,10 @@
-const hamburguerButton = document.querySelector(".menu-hamburguer-button");
+const hamburgerButton = document.querySelector(".menu-hamburger-button");
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
 const logoName =document.querySelector(".logo-name-link");
 
 // Toggles mobile menu visibility when hamburger button is clicked
-hamburguerButton.addEventListener("click", () => {
+hamburgerButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("show");
 });
 
